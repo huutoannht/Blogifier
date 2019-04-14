@@ -25,13 +25,13 @@ namespace Core.Helpers
 
                 if (author == null)
                 {
-                    filterContext.Result = new UnauthorizedObjectResult("Unauthenticated");
+                    filterContext.Result = new UnauthorizedResult();
                 }
                 else
                 {
                     if (!author.IsAdmin)
                     {
-                        filterContext.Result = new UnauthorizedObjectResult("Unauthorized");
+                        filterContext.Result = new UnauthorizedResult();
                     }
                 }
             }
