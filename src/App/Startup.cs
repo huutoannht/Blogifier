@@ -1,4 +1,4 @@
-﻿using Askmethat.Aspnet.JsonLocalizer.Extensions;
+﻿//using Askmethat.Aspnet.JsonLocalizer.Extensions;
 using Core;
 using Core.Data;
 using Core.Extensions;
@@ -69,7 +69,7 @@ namespace App
             services.AddLogging(loggingBuilder =>
                 loggingBuilder.AddSerilog(dispose: true));
 
-            services.AddJsonLocalization();
+            //services.AddJsonLocalization();
 
             services.Configure<RequestLocalizationOptions>(options =>
             {
